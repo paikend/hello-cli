@@ -6,3 +6,4 @@
 5. update cmd/greet.go
    1. Print Hello World
    2. Print Hello ${name}, default name is World
+   3. (Print Hello ${name}, default name is World) * ${count}, default count is 1
