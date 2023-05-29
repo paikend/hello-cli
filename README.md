@@ -10,3 +10,4 @@
 3. (Print Hello ${name}, default name is World) * ${count}, default count is 1
 ### 4. Results
    ![execute_image](./assets/execute_image.png)
+### 5. Write the makefile
