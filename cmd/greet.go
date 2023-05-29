@@ -9,15 +9,18 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var name string
+
 // greetCmd represents the greet command
 var greetCmd = &cobra.Command{
 	Use:   "greet",
 	Short: "Greets a user",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("Hello World\n")
+		fmt.Printf("Hello %s\n", name)
 	},
 }
 
 func init() {
+	greetCmd.Flags().StringVarP(&name, "name", "n", "World", "Name to greet")
 	rootCmd.AddCommand(greetCmd)
 }
